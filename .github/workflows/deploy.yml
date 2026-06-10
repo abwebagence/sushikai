@@ -26,11 +26,26 @@ jobs:
 
       - name: Upload by SFTP
         run: |
-          lftp <<EOF
+          n=0
+          until [ $n -ge 3 ]; do
+          lftp <<EOF && break
           open -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" sftp://${{ secrets.FTP_HOST }}:22
           set sftp:auto-confirm yes
-          set net:timeout 20
-          set net:max-retries 2
-          mirror -R --verbose --exclude .git/ --exclude .github/ ./ "${{ secrets.FTP_REMOTE_DIR }}"
+          set net:timeout 40
+          set net:max-retries 5
+          set net:reconnect-interval-base 5
+          set net:reconnect-interval-multiplier 1.5
+          set net:reconnect-interval-max 60
+          set xfer:clobber on
+          mirror -R --verbose --continue --exclude .git/ --exclude .github/ ./ "${{ secrets.FTP_REMOTE_DIR }}"
           bye
           EOF
+          n=$((n+1))
+          echo "::warning::Upload SFTP échoué, nouvelle tentative $n/3 dans 20 s..."
+          sleep 20
+          done
+          if [ $n -ge 3 ]; then
+            echo "::error::Déploiement échoué après 3 tentatives."
+            exit 1
+          fi
+          echo "Déploiement terminé avec succès."
