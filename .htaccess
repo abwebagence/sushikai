@@ -1,0 +1,64 @@
+# =========================================
+# Redirection permanente non-www → www
+# =========================================
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sushi-kai\.com [NC]
+RewriteRule ^(.*)$ https://www.sushi-kai.com/$1 [L,R=301]
+
+# =========================================
+# Activation du cache des fichiers statiques
+# =========================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images (1 an)
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Polices (1 an)
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+
+  # CSS et JS (1 mois)
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+</IfModule>
+
+# =========================================
+# Renforcement du cache avec Cache-Control
+# =========================================
+<IfModule mod_headers.c>
+  # Cache des images et polices
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|ttf|otf|woff|woff2)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+
+  # Cache CSS et JS
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+</IfModule>
+
+# =========================================
+# Activation de la compression GZIP
+# =========================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# =========================================
+# Sécurité de base
+# =========================================
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>

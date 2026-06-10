@@ -1,0 +1,32 @@
+/* fonts.css */
+
+/* --- Font Awesome --- */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/fa-regular-400.woff2") format("woff2"),
+       url("/fonts/fa-regular-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/fa-brands-400.woff2") format("woff2"),
+       url("/fonts/fa-brands-400.woff") format("woff");
+}
+
+/* --- Linearicons --- */
+@font-face {
+  font-family: "Linearicons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Linearicons.ttf") format("truetype");
+}
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');

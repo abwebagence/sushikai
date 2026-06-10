@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="canonical" 
+      href="https://www.sushi-kai.com/" />
+<!-- Elfsight Website Translator | Untitled Website Translator -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f1d3d62e-e904-41f9-a4b1-1aa22c6d6ea0" data-elfsight-app-lazy></div>
+
+
+  <!--================ Basic page needs ================-->
+  <title>Sushikai Beaune - Restaurant Japonais</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sushikai">
+  <meta name="keywords" content="Sushikai, Restaurant Beaune, Restaurant Sushikai, sushi beaune, restaurant japonais beaune, Makis Beaune, Restaurant asiatique beaune, restaurant asiatique, Sushikai carte, Sushikai menu">
+  <meta name="description" content="Le restaurant Sushikai à Beaune, plats japonais à emporter ou sur place. Des sushis et plats asiatique dans un restaurant Beaunois d'exception ! Profitez de notre terrasse style japonais.">
+<link rel="stylesheet" href="fonts-display.css">
+  <!--================ Mobile specific metas ================-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="fontawesome.min.css">
+<link rel="stylesheet" href="fa-fix.css">
+<link rel="stylesheet" href="/fonts.css">
+  <!--================ Favicon ================-->
+<link rel="icon" href="https://www.sushi-kai.com/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://www.sushi-kai.com/favicon.ico">
+
+<link rel="icon" href="https://www.sushi-kai.com/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="https://www.sushi-kai.com/favicon-96.png" sizes="96x96" type="image/png">
+<link rel="icon" href="https://www.sushi-kai.com/favicon-192.png" sizes="192x192" type="image/png">
+
+  <!--================ Google web fonts ================-->
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700,800,900%7CLato:300i,400,400i,700,700i,900&display=swap" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700,800,900%7CLato:300i,400,400i,700,700i,900&display=swap" rel="stylesheet">
+  </noscript>
+
+  <!--================ Préconnexion / Préchargement Fonts et réseaux ================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://connect.facebook.net">
+  <link rel="preconnect" href="https://scontent-cdg4-1.xx.fbcdn.net">
+
+  <!-- Précharge et applique Material Icons -->
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&display=swap" as="style" onload="this.rel='stylesheet'">
+
+  <!-- FontAwesome chargé de façon non bloquante -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css" >
+
+  <!-- Fallback pour les navigateurs sans JS -->
+  <noscript>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  </noscript>
+
+  <!--================ Vendor CSS ================-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="css/animate.min.css" >
+  <link rel="stylesheet" href="css/linearicons.css" >
+  <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.min.css" >
+  <link rel="stylesheet" href="vendors/arcticmodal/jquery.arcticmodal-0.3.css" >
+  <link rel="stylesheet" href="vendors/revolution/css/settings.css" >
+  <link rel="stylesheet" href="vendors/revolution/css/layers.min.css" >
+  <link rel="stylesheet" href="vendors/revolution/css/navigation.min.css" ">
+
+  <!--================ Theme CSS ================-->
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/responsive.css" >
+
+  <!--================ Vendor JS ================-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDJKBCFN6B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SDJKBCFN6B');
+  </script>
+</head>
+
+
+
+
+<div id="videoModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal">&times;</button>
+
+    <video id="modalVideo" autoplay muted playsinline>
+      <source src="ef8ef7e8fzeff.mp4" type="video/mp4">
+      Ton navigateur ne supporte pas la vidéo.
+    </video>
+  </div>
+</div>
+
+<style>
+  /* Overlay gris */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+  }
+
+  /* Contenu du popup */
+.modal-content {
+  position: relative;
+  width: min(90vw, 400px);   /* largeur max sur PC */
+  aspect-ratio: 9 / 16;      /* format téléphone */
+  background: black;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.modal-content video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* remplit parfaitement */
+  display: block;
+}
+
+  /* Bouton croix */
+  .modal-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: 0.2s;
+  }
+
+  .modal-close:hover {
+    background: rgba(255,255,255,0.4);
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    .modal-content {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .modal-close {
+      font-size: 26px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+</style>
+
+<script>
+  window.addEventListener("load", function () {
+    const modal = document.getElementById("videoModal");
+    const closeBtn = document.getElementById("closeModal");
+    const video = document.getElementById("modalVideo");
+
+    // Fermer en cliquant sur la croix
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    // Fermer en cliquant en dehors du contenu
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+
+<body>
+  <div class="mad-preloader"></div>
+  <div id="mad-page-wrapper" class="mad-page-wrapper with-side-menu">
+    <!--================ Search Modal ================-->
+    <div class="mad-d-none">
+      <div id="search-modal" class="mad-modal mad-modal--search">
+        <button type="button" class="arcticmodal-close"><i class="material-icons">close</i></button>
+        <h4 class="mad-title">Search</h4>
+        <!--================ Search Form ================-->
+        <form role="search" method="get" class="mad-searchform">
+          <input type="text" name="s" placeholder="Type your keyword here">
+          <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <!--================ End of Search Form ================-->
+      </div>
+    </div>
+    <!--================ End of Search Modal ================-->
+    <!--================ Header ================-->
+    <header id="mad-header" class="mad-header mad-header-aside">
+      <!--================ Section ================-->
+      <div class="mad-header-section">
+        <div class="mad-header-items">
+          <div class="mad-header-item">
+           <a href="index.html" class="mad-logo">
+  <img src="images/logo1.png" alt="logo sushikai beaune" width="200" height="37">
+</a>
+          </div>
+         
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		
+		 
+		 
+
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 <div class="mad-header-item">
+            <!--================ Vr Menu ================-->
+            <div class="mad-vr-wrap">
+              <nav class="mad-vr-nav">
+                <ul>
+                 <li class="menu-item  "><br><a href="reservation_open_table.html"><img src="wine.png" width="33px" height="33px" alt="icone vins"> &nbsp;&nbsp;RÉSERVER SUR PLACE</a>
+
+		  
+				  
+				  
+				  
+				  
+                    <!--================ Sub Menu ================-->
+                   
+                    <!--================ End of Sub Menu ================-->
+                  </li> <li class="menu-item  "><a href="menu_v1.html"><img src="3259078.png" width="30px" height="30px" alt="icone sushis"> &nbsp;&nbsp;COMMANDER À EMPORTER</a>
+				  
+                    <!--================ Sub Menu ================-->
+                   
+                    <!--================ End of Sub Menu ================-->
+                  </li> <li class="menu-item menu-item-has-children "><a href="#"><b>Pages ▼</b></a>
+                    <!--================ Sub Menu ================-->
+                    <ul class="sub-menu">
+				  <li class="menu-item menu-item-has-children "><a href="menu_v4.html"><b>Menu & Vins</b></a>
+                    <!--================ Sub Menu ================-->
+                   
+                    <!--================ End of Sub Menu ================-->
+                  </li>
+				  <li class="menu-item menu-item-has-children "><a href="soiree.html">Évenements en soirée et journée</a>
+                    <!--================ Sub Menu ================-->
+                   
+                    <!--================ End of Sub Menu ================-->
+                  </li> 
+				
+				  <li class="menu-item menu-item-has-children "><a href="traiteur.html">Traiteur et Foodtruck</a>
+                    <!--================ Sub Menu ================-->
+                   
+                    <!--================ End of Sub Menu ================-->
+                  </li><li class="menu-item menu-item-has-children "><a href="home_5.html">En savoir plus</a>
+                    <!--================ Sub Menu ================-->
+                   
+                    <!--================ End of Sub Menu ================-->
+                  </li>
+                      <li class="menu-item"><a href="pages_contact_v1.html">Nous contacter</a>
+                      </li>
+                     
+                    
+                  
+                    </ul>
+                 
+                    <!--================ End of Sub Menu ================-->
+                  </li>
+                    <!--================ End of Sub Menu ================-->
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!--================ End of Vr Menu ================-->
+          </div>
+        </div>
+      </div>
+      <!--================ End of Section ================-->
+    </header>
+    <!--================ End of Header ================-->
+	
+	
+	
+	
+	<main>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!--================ Slider Revolution ================-->
+    <div dir="ltr" class="rev_slider_wrapper fullscreenbanner-container">
+      <div id="rev-slider-2" data-version="5.4.5" class="mad-d-none rev-slider fullscreenabanner">
+        <ul>
+          <!--================ Slide 1 ================-->
+          <li data-transition="fade">
+            <!-- MAIN IMAGE -->
+            <img src="1600x1080_slFDFDide1.webp" alt="" data-bgposition="top center" data-bgfit="cover"
+              data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+            <!--================ Layer ================-->
+            <div
+              data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+              data-x="center" data-y="center" data-hoffset="['0', '0', '0', '0']" data-voffset="['-30', '-30', '-30', '-30']"
+              data-width="['700', '700', '700', '100%']" data-height="['auto']" data-textAlign="['center']" data-color="['#ffffff']"
+              data-fontsize="['72']" data-lineheight="['88']" class="tp-caption tp-resizeme tp-layer-section-title">Produits frais & <br>
+             Fait maison</div>
+            <!--================ End of Layer ================-->
+            <!--================ Layer ================-->
+            <div
+              data-frames="[{&quot;delay&quot;:600,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+              data-x="center" data-y="center" data-hoffset="['0', '0', '0', '0']" data-voffset="['140', '140', '140', '140']"
+              data-width="['700', '700', '700', '100%']" data-textAlign="['center']" class="tp-caption tp-resizeme">
+              
+            </div>
+            <!--================ End of Layer ================-->
+          </li>
+          <!--================ End of Slide 1 ================-->
+          <!--================ Slide 2 ================-->
+          <li data-transition="fade">
+            <!-- MAIN IMAGE -->
+            <img src="images/1600x1080_slide2.webp" alt="" data-bgposition="top center" data-bgfit="cover"
+              data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+            <!--================ Layer ================-->
+            <div
+              data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+              data-x="center" data-y="center" data-hoffset="['0', '0', '0', '0']" data-voffset="['-30', '-30', '-30', '-30']"
+              data-width="['700', '700', '700', '100%']" data-height="['auto']" data-textAlign="['center']"
+              data-color="['#ffffff']" data-fontsize="['72']" data-lineheight="['88']"
+              class="tp-caption tp-resizeme tp-layer-section-title">Les délices du <br>
+              Japon à Beaune</div>
+            <!--================ End of Layer ================-->
+            <!--================ Layer ================-->
+            <div
+              data-frames="[{&quot;delay&quot;:600,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+              data-x="center" data-y="center" data-hoffset="['0', '0', '0', '0']" data-voffset="['140', '140', '140', '140']"
+              data-width="['700', '700', '700', '100%']" data-textAlign="['center']" class="tp-caption tp-resizeme">
+             
+            </div>
+            <!--================ End of Layer ================-->
+          </li>
+          <!--================ End of Slide 2 ================-->
+          <!--================ Slide 3 ================-->
+          <li data-transition="fade">
+            <!-- MAIN IMAGE -->
+            <img src="images/1600x1080_slide1.WEbp" alt="" data-bgposition="top center" data-bgfit="cover"
+              data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+            <!--================ Layer ================-->
+            <div
+              data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+              data-x="center" data-y="center" data-hoffset="['0', '0', '0', '0']" data-voffset="['-30', '-30', '-30', '-30']"
+              data-width="['700', '700', '700', '100%']" data-height="['auto']" data-textAlign="['center']"
+              data-color="['#ffffff']" data-fontsize="['72']" data-lineheight="['88']"
+              class="tp-caption tp-resizeme tp-layer-section-title">Le vrai goût <br>
+              de la cuisine Japonaise</div>
+            <!--================ End of Layer ================-->
+            <!--================ Layer ================-->
+            <div
+              data-frames="[{&quot;delay&quot;:600,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+              data-x="center" data-y="center" data-hoffset="['0', '0', '0', '0']" data-voffset="['140', '140', '140', '140']"
+              data-width="['700', '700', '700', '100%']" data-textAlign="['center']" class="tp-caption tp-resizeme">
+              
+            </div>
+            <!--================ End of Layer ================-->
+          </li>
+          <!--================ End of Slide 3 ================-->
+        </ul>
+      </div>
+      <div class="mad-actions">
+        <div class="mad-item">
+         
+        </div>
+        <div class="mad-item mad-dropdown">
+         
+          <div class="shopping-cart mad-dropdown-element">
+            <div class="mad-products mad-product-small">
+              <div class="mad-col">
+                <!-- Product -->
+                <div class="mad-product">
+                  <button class="mad-close-item"><i class="licon-cross-circle"></i></button>
+                  <a href="#" class="mad-product-image">
+                   <img src="images/72x72_img1.jpg" alt="" >
+
+                  </a>
+                  <!-- product-info -->
+                  <div class="mad-product-description">
+                    <a href="#" class="mad-product-title mad-link">Tuna Roll</a>
+                    <span class="mad-product-price">1 × $7.99</span>
+                  </div>
+                  <!--/ product-info -->
+                </div>
+                <!-- End of Product -->
+              </div>
+              <div class="mad-col">
+                <!-- Product -->
+                <div class="mad-product">
+                  <button class="mad-close-item"><i class="licon-cross-circle"></i></button>
+                  <a href="#" class="mad-product-image">
+                    <img src="images/72x72_img2.jpg" alt="">
+                  </a>
+                  <!-- product-info -->
+                  <div class="mad-product-description">
+                    <a href="#" class="mad-product-title mad-link">Yaki Niku Roll</a>
+                    <span class="mad-product-price">1 × $13.99</span>
+                  </div>
+                  <!--/ product-info -->
+                </div>
+                <!-- End of Product -->
+              </div>
+            </div>
+            <div class="sc-footer">
+              <div class="subtotal">Subtotal: $21.98</div>
+              <a href="#" class="btn btn-small w-100"><span>Checkout</span> <i class="material-icons">arrow_right_alt</i></a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <!--================ End of Slider Revolution ================-->
+    <div class="mad-content mad-content--no-pb">
+      <div class="container">
+        <div class="content-element-16">
+          <div class="row col-xxl align-items-center row-reverse">
+            <div class="col-xl-7">
+              <div class="mad-offset-left">
+                <div class="mad-section-side-title top-space rotate">Un Cadre d'exception</div>
+                <h2>Un Restaurant de charme 
+                 </h2>
+                <p>Le restaurant Sushi Kaï est un établissement jouissant d’une bonne notoriété à Beaune, à Pommard et dans tout le département de la Côte-d’Or. Nous devons notre réputation à la qualité du service et au charme de notre cadre.<br> Vous serez accueilli dans une salle spacieuse, décoré et confortable. <br><br>Outre les plats faits maison, l’ambiance du restaurant et la décoration de la pièce vous rappelleront également la culture japonaise et asiatique. 
+                  </p>
+                <a href="home_5.html" class="mad-read-more big-size">En savoir plus<img src="sushi_svg_icons/shrimp.svg" alt="" class="svg"></a>
+              </div>
+            </div>
+            <div class="col-xl-5">
+              <figure><img src="https://www.sushi-kai.com/images/723x464_img1.avif" alt="montage sushikai"></figure>
+            </div>
+          </div>
+          <div class="row col-xxl">
+            <div class="col-xl-7">
+              <figure class="mad-wave-item">
+                <span class="mad-wave type-2"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
+                <img src="https://www.sushi-kai.com/images/882x480_img1.avif" 
+  
+     alt="chien sushikai" 
+     fetchpriority="high">
+              </figure>
+            </div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+            <div class="col-xl-5">
+              <div class="mad-offset-right with-top-space">
+                <div class="mad-section-side-title top-space-2 right-side">Pourquoi nous choisir ?</div>
+                <!--================ Icon Boxes ================-->
+                <div class="mad-icon-boxes item-col-2">
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/stones.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <h6 class="mad-icon-box-title">Cuisine Niponne</h6>
+                        <p>Notre restaurant est spécialisé dans la cuisine Niponne traditionnelle
+                        </p>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/fish.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <h6 class="mad-icon-box-title">Qualité & Fait Maison</h6>
+                        <p>Des produits bios et fermiés<br> d'une qualité rare, et biensûr faits maison !
+                        </p>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/bamboo.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <h6 class="mad-icon-box-title">À Emporter</h6>
+                        <p>Nous proposons également nos <br> meilleurs plats à emporter !
+                        </p>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/tableware.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <h6 class="mad-icon-box-title">Pour qui ?</h6>
+                        <p>Dîner en couple à Beaune, repas d'affaires, moments entre amis, pour les amateurs de bons vins en Bourgogne.</b>
+                        </p>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                </div>
+                <!--================ End of Icon Boxes ================-->
+              </div>
+            </div>
+          </div>
+       
+        
+		
+		
+		<br><br><br>
+				  <div class="content-element-17">
+              <!--================ Team Members ================-->
+              <div class="mad-team big-type">
+                <div class="mad-col">
+                  <!--================ Team Member ================-->
+                  <figure class="mad-team-member">
+                    <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/704x648_photo1.jpg" alt=""></a>
+                    <figcaption class="mad-team-member-info">
+                      <div class="mad-info-wrap">
+                        <div class="mad-info-header">
+                          <h2 class="mad-team-member-name"><p class="lol">Mr WANG</p></h2>
+                          <div class="mad-member-stat">Chef de Cuisine</div>
+                        </div>
+                        <p>Mr WANG, né en 1990, est un chef de cuisine passionné et spécialiste de la cuisine japonaise. Il exprime son art culinaire à travers une gastronomie nipponne authentique, notamment grâce à l’élaboration de sushis préparés avec précision, exigence et savoir-faire.
+<bR><br>
+Chef depuis 2014, très investi dans son métier, il perfectionne chaque jour sa technique et son sens du détail. Cette passion le mène à remporter en 2017 à Paris le prestigieux titre de Champion de France de sushi, récompensant son talent et son engagement pour l’excellence de la cuisine japonaise.
+<bR><br>
+Fier de ce trophée, Mr WANG décide en 2018 de s’installer à Beaune en Bourgogne et de reprendre le restaurant SUSHI KAI. Aujourd’hui, cette adresse est devenue une référence pour tous ceux qui recherchent un restaurant japonais à Beaune ou souhaitent déguster un sushi à Beaune lors d’un séjour ou d’un week-end dans la région.
+<bR><br>
+Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de vous faire découvrir une cuisine japonaise raffinée, préparée avec passion.</p>
+                        <div class="mad-social-icons size-big style-3">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <!--================ End Of Team Member ================-->
+                </div>
+            
+              </div>
+              <!--================ End Of Team Members ================-->
+            </div>
+		
+		
+		
+	
+		  <div class="mad-team item-col-4">
+              <div class="mad-col">
+                <!--================ Team Member ================-->
+                <figure class="mad-team-member">
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo5.png" alt=""></a>
+                  <figcaption class="mad-team-member-info">
+                    <div class="mad-info-wrap">
+                      <div class="mad-info-header">
+                        <h6 class="mad-team-member-name"><a href="#" class="mad-link">Prix PAVILLON FRANCE</a></h6>
+                        <div class="mad-member-stat">Epreuve créative</div>
+                      </div>
+                      <p>Epreuvé créative du prix pavillon France remportée par notre chef </p>
+                      <div class="mad-social-icons size-2 style-3">
+                        <ul>
+                          <li><a href="https://www.facebook.com/sushikaibeaune"><i class="fab fa-facebook-f"></i></a></li>
+                     
+                          <li><a href="https://www.instagram.com/sushikai_beaune/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+                <!--================ End Of Team Member ================-->
+              </div>
+              <div class="mad-col">
+                <!--================ Team Member ================-->
+                <figure class="mad-team-member">
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo6.png" alt=""></a>
+                  <figcaption class="mad-team-member-info">
+                    <div class="mad-info-wrap">
+                      <div class="mad-info-header">
+                        <h6 class="mad-team-member-name"><a href="#" class="mad-link">Prix OSO</a></h6>
+                        <div class="mad-member-stat">Epreuve imposée</div>
+                      </div>
+                      <p>Prix OSO (épreuve imposée) remportée par notre Chef</p>
+                      <div class="mad-social-icons size-2 style-3">
+                        <ul>
+                          <li><a href="https://www.facebook.com/sushikaibeaune"><i class="fab fa-facebook-f"></i></a></li>
+                      
+                          <li><a href="https://www.instagram.com/sushikai_beaune/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+                <!--================ End Of Team Member ================-->
+              </div>
+              <div class="mad-col">
+                <!--================ Team Member ================-->
+                <figure class="mad-team-member">
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo3.png" alt=""></a>
+                  <figcaption class="mad-team-member-info">
+                    <div class="mad-info-wrap">
+                      <div class="mad-info-header">
+                        <h6 class="mad-team-member-name"><a href="#" class="mad-link">OPEN DE FRANCE SUSHI</a></h6>
+                        <div class="mad-member-stat">2016</div>
+                      </div>
+                      <p>3 ème prix 2016 de l'Open sushi France</p>
+                      <div class="mad-social-icons size-2 style-3">
+                        <ul>
+                          <li><a href="https://www.facebook.com/sushikaibeaune"><i class="fab fa-facebook-f"></i></a></li>
+                       
+                          <li><a href="https://www.instagram.com/sushikai_beaune/"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+                <!--================ End Of Team Member ================-->
+              </div>
+              <div class="mad-col">
+                <!--================ Team Member ================-->
+                <figure class="mad-team-member">
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo4.png" alt=""></a>
+                  <figcaption class="mad-team-member-info">
+                    <div class="mad-info-wrap">
+                      <div class="mad-info-header">
+                        <h6 class="mad-team-member-name"><a href="#" class="mad-link">OPEN DE FRANCE SUSHI</a></h6>
+                        <div class="mad-member-stat">2017</div>
+                      </div>
+                      <p>1er prix 2017 de l'Open sushi France </p>
+                      <div class="mad-social-icons size-2 style-3">
+                        <ul>
+                          <li><a href="https://www.facebook.com/sushikaibeaune"><i class="fab fa-facebook-f"></i></a></li>
+                   
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+                <!--================ End Of Team Member ================-->
+              </div>
+            </div><br><br><br><br>
+		
+		<!-- Galerie slider horizontal - sans conflit -->
+
+
+
+
+
+
+
+<br>
+<div class="slider-container">
+  <button class="slider-arrow left">‹</button>
+
+  <div class="slider-track">
+  
+
+ 
+
+    <div class="slide">
+      <img src="img/1000027337.avif" alt="">
+     <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+
+    <div class="slide">
+      <img src="img/1000029156.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+
+    <div class="slide">
+      <img src="img/1000028821.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000027338.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000027426.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000027898.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000027904.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000027941.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000028613.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000028619.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000028797.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000028802.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000028826.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000029557.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000029566.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000029568.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000029570.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000029574.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000029581.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000029586.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000032748.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	 <div class="slide">
+      <img src="img/1000032752.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032754.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032757.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032772.avif" alt="">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032849.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032850.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032852.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032855.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032859.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032862.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000036085.avif" alt="">
+       <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	
+	
+	
+	
+  </div>
+
+  <button class="slider-arrow right">›</button>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox">
+  <img src="" alt="">
+</div>
+
+<style>
+/* ===== SLIDER ===== */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slide-overlay img.overlay-icon {
+  width: 10%;
+  height: auto;
+  max-width: 40px;
+  min-width: 20px;
+}
+.slider-track {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 calc(50% - 8px);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Image */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+/* Overlay texte */
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Hover */
+.slide:hover img {
+  filter: grayscale(100%) brightness(0.6);
+}
+
+.slide:hover .slide-overlay {
+  opacity: 1;
+}
+
+/* Flèches */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px 12px;
+  z-index: 2;
+}
+
+.slider-arrow.left {
+  left: 5px;
+}
+
+.slider-arrow.right {
+  right: 5px;
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+</style>
+
+<script>
+/* Slider navigation */
+const track = document.querySelector('.slider-track');
+const leftArrow = document.querySelector('.slider-arrow.left');
+const rightArrow = document.querySelector('.slider-arrow.right');
+
+leftArrow.addEventListener('click', () => {
+  track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+});
+
+rightArrow.addEventListener('click', () => {
+  track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+});
+
+/* Lightbox */
+const slides = document.querySelectorAll('.slide img');
+const lightbox = document.querySelector('.lightbox');
+const lightboxImg = lightbox.querySelector('img');
+
+slides.forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+</script><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+        <div class="content-element-16">
+          <div class="mad-offset-left">
+            <div class="mad-section-side-title top-space rotate">4 étapes</div>
+            <h2>Commandez en ligne</h2>
+            <span class="mad-word"><img src="images/word.png" alt=""></span>
+          </div>
+          <!--================ Icon Boxes ================-->
+          <div class="mad-icon-boxes type-2 item-col-4 no-bottom-space mad-offset-left">
+            <div class="mad-col">
+              <!--================ Icon Box ================-->
+              <article class="mad-icon-box">
+                <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/cart.svg" alt=""></i>
+                <div class="mad-icon-box-content">
+                  <h6 class="mad-icon-box-title">1. Allez sur la page des commandes</h6>
+                  <p>Rendez-vous sur la page à emporter <br> <a href="menu_v1.html"><b>Cliquez ici pour y acceder</b></a>
+                  </p>
+                </div>
+              </article>
+              <!--================ End of Icon Box ================-->
+            </div>
+            <div class="mad-col">
+              <!--================ Icon Box ================-->
+              <article class="mad-icon-box with-arrow-down">
+                <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/cards.svg" alt=""></i>
+                <div class="mad-icon-box-content">
+                  <h6 class="mad-icon-box-title">02. Choisissez votre menu</h6>
+                  <p>Composez votre repas parmis notre <br> grand choix de plats ! 
+                  </p>
+                </div>
+              </article>
+              <!--================ End of Icon Box ================-->
+            </div>
+           
+            <div class="mad-col">
+              <!--================ Icon Box ================-->
+              <article class="mad-icon-box">
+                <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/food_box.svg" alt=""></i>
+                <div class="mad-icon-box-content">
+                  <h6 class="mad-icon-box-title">03. Nous préparons votre plat</h6>
+                  <p>Une fois que la commande a été payée,<br> nous vous donnons une heure pour venir la chercher (nous pouvons vous appeler en cas de retard)
+                  </p>
+                </div>
+              </article>
+              <!--================ End of Icon Box ================-->
+            </div>
+            <div class="mad-col">
+              <!--================ Icon Box ================-->
+              <article class="mad-icon-box">
+                <i class="mad-icon-box-icon"><img class="svg" src="sushi_svg_icons/truck.svg" alt=""></i>
+                <div class="mad-icon-box-content">
+                  <h6 class="mad-icon-box-title">04. Venez au restaurant !</h6>
+                  <p>Nous vous attendons sur place
+                  </p>
+                </div>
+              </article>
+              <!--================ End of Icon Box ================-->
+            </div>
+          </div>
+          <!--================ End of Icon Boxes ================-->
+        </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		
+            <div class="content-element-xl">
+              <!--================ Image Boxes ================-->
+              <div class="mad-entities type-2 no-gutters">
+                <div class="mad-col">
+                  <!--================ Entity ================-->
+                  <article class="mad-entity">
+                    <div class="mad-entity-media mad-wave-item">
+                      <span class="mad-wave"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
+                    <img src="https://www.sushi-kai.com/images/704x568_img1.avif" alt="terasse sushikai beaune">
+                    </div>
+                    <div class="mad-entity-content">
+                   <p class="lol32" style="color: black; font-size: 20px; font-weight: bold;">Une adresse à ne pas manquer<br>
+                      <p>Vous envisagez de prendre votre dîner avec des amis ou des collègues ? Notre salle de restauration est ouverte du <b>mardi au samedi, de 12h à 14h et de 19h à 22h</b>. Nous vous accueillons dans un cadre chaleureux et convivial.
+
+Vous pouvez dîner en <b>salle ou en terrasse</b> selon vos envies. Notre personnel dynamique et souriant est à votre service pour noter vos suggestions et répondre à vos besoins. N’hésitez pas à réserver votre table ! Vous ne regretterez pas votre choix.</p>
+                     
+                          </a><br><a href="https://www.sushi-kai.com/mobile/reservation_open_table.html" class="mad-read-more big-size">Réserver une table &nbsp;<img src="table.png" width="30px" height="30px"
+                          alt="icone table" ></a>
+                    </div>
+                  </article>
+                  <!--================ End of Entity ================-->
+                </div>
+                <div class="mad-col">
+                  <!--================ Entity ================-->
+                  <article class="mad-entity">
+                    <div class="mad-entity-media mad-wave-item">
+                      <span class="mad-wave style-2 type-2"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
+                     <img src="https://www.sushi-kai.com/images/704x568_img2.avif" alt="plateau sushis ">
+                    </div>
+                    <div class="mad-entity-content">
+                       <a  class="mad-link">
+<p class="lol32" style="color: black; font-size: 20px; font-weight: bold;">Nos spécialités<br>
+                      <p> Nous vous proposons des plats succulents issus de la cuisine nipponne. Venez rejoindre notre restaurant pour savourer nos délicieux sushis, sashimis et makis ! Nos produits sont concoctés à base de riz blanc, de fruits de mer, de légumes et de poulets.
+
+Vous pouvez les consommer sur place ou les emporter. Nous vous proposons, par ailleurs, un service traiteur pour tous types d’événements : mariages, baptêmes, soirées d’anniversaire, etc. Solliciter nos prestations, c’est compter sur le savoir-faire d’une équipe de cuisiniers expérimentés. </p>
+                      <br><a href="pages_team.html" class="mad-read-more big-size">Voir la présentation du Chef &nbsp;<img src="hat.png" width="30px" height="30px"
+                         alt="icone toque de chef" ></a>
+                    </div>
+                  </article>
+                  <!--================ End of Entity ================-->
+                </div>
+              </div>
+              <!--================ End of Image Boxes ================-->
+            <br><br><br>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+        <div class="content-element-18">
+          <div class="mad-offset">
+            <div class="mad-section-side-title top-space rotate">Ce qu'on dit de nous !</div>
+            <h2>+ de 670 avis 5 étoiles.  </h2><br><br>
+            <!--================ Testimonials ================-->
+            <div class="mad-testimonials">
+              <div class="mad-grid mad-grid--cols-2 owl-carousel">
+                <!-- owl item -->
+                <div class="mad-grid-item">
+                  <div class="mad-testimonial">
+                    <div data-estimate="5" class="mad-rating"></div>
+                    <div class="mad-testiomonial-info">
+                      <blockquote>
+                        <p>“Quel délicieux cadre pour ce magnifique restaurant en plein cœur de Beaune Un accueil très agréable et une cuisine pleine de saveurs Un pur régal Merci beaucoup pour merveilleux moment Claire Georges”</p>
+                      </blockquote>
+                    </div>
+                    <div class="mad-author">
+                      <div class="mad-author-info">
+                        <cite>Avis écrit le 24 septembre 2019 - ClaireG3419
+</cite>
+                        <span><img src="images/visor.png" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / owl item -->
+                <!-- owl item -->
+              
+                <!-- / owl item -->
+                <!-- owl item --><div class="mad-grid-item">
+                  <div class="mad-testimonial">
+                    <div data-estimate="5" class="mad-rating"></div>
+                    <div class="mad-testiomonial-info">
+                      <blockquote>
+                        <p>“Des sushis comme on en a jamais mangés ! Juste incroyable ! Je dirai même exceptionnel. Le chef mérite bien sa qualité de premier ouvrier de France. La serveuse est très sympathique. Je vous le recommande.”</p>
+                      </blockquote>
+                    </div>
+                    <div class="mad-author">
+                      <div class="mad-author-info">
+                        <cite>Il y a 4 mois - Sylvie Londechal</cite>
+                        <span><img src="images/visor.png" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / owl item -->
+                <!-- owl item -->
+                <div class="mad-grid-item">
+                  <div class="mad-testimonial">
+                    <div data-estimate="5" class="mad-rating"></div>
+                    <div class="mad-testiomonial-info">
+                      <blockquote>
+                        <p>“Les mets sont de qualités, l'accueil chaleureux et ils n'hésitent pas à vous expliquer les particularités de chaque plat. Dans ce cadre japonais chic il vaut mieux réserver ou prendre a emporter. Pour la qualité le prix n'est pas excessif !!”</p>
+                      </blockquote>
+                    </div>
+                    <div class="mad-author">
+                      <div class="mad-author-info">
+                        <cite>Il y a 6 mois - Dutto L</cite>
+                        <span><img src="images/visor1.png" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / owl item -->
+                <!-- owl item -->
+                <div class="mad-grid-item">
+                  <div class="mad-testimonial">
+                    <div data-estimate="5" class="mad-rating"></div>
+                    <div class="mad-testiomonial-info">
+                      <blockquote>
+                        <p>“Déjà la 2eme expériences pour moi Une terrasse et un jardinet superbes Un menu au top à un tarif correcte Service digne d'un gastro Toooop”</p>
+                      </blockquote>
+                    </div>
+                    <div class="mad-author">
+                      <div class="mad-author-info">
+                        <cite>Avis écrit le 18 octobre 2019  - Joshuuaaa</cite>
+                        <span><img src="images/visor.png" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / owl item -->
+                <!-- owl item -->
+                <div class="mad-grid-item">
+                  <div class="mad-testimonial">
+                    <div data-estimate="5" class="mad-rating"></div>
+                    <div class="mad-testiomonial-info">
+                      <blockquote>
+                        <p>“Chaque fois que nous venons, que ce soit entre amis, en famille ou en amoureux, nous nous régalons avec les plats proposés. Le décor intérieur et extérieur est magnifique, calme. C’est toujours un vrai bonheur d’y venir.”</p>
+                      </blockquote>
+                    </div>
+                    <div class="mad-author">
+                      <div class="mad-author-info">
+                        <cite>Avis écrit le 29 septembre 2019 - Tweepi
+</cite>
+                        <span><img src="images/visor.png" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / owl item -->
+                <!-- owl item -->
+                <div class="mad-grid-item">
+                  <div class="mad-testimonial">
+                    <div data-estimate="5" class="mad-rating"></div>
+                    <div class="mad-testiomonial-info">
+                      <blockquote>
+                        <p>“Je n'ai jamais mangé d'aussi bons sushi. De plus l'ambiance et accueil sont chaleureux. Que du positif. Je vous recommande ce restaurant.”</p>
+                      </blockquote>
+                    </div>
+                    <div class="mad-author">
+                      <div class="mad-author-info">
+                        <cite></cite>
+                        <span><img src="images/visor.png" alt=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / owl item -->
+              </div>
+            </div>
+            <!--================ End of Testimonials ================-->
+          </div>
+        </div>
+        <div class="content-element-18">
+          <div class="mad-offset-left">
+   
+
+                <div class="mad-col mad-col-full">
+                  <div class="mad-offset-right no-space">
+                    <div class="mad-section-side-title right-side top-space">Rejoignez nous !</div>
+                    <div class="mad-newsletter-section">
+                      <h5 class="mad-title">Souscrivez à notre newsletter <br>
+                        pour rester au courant !</h5>
+                      <form class="mad-newsletter-form one-line">
+                        <input type="email" name="email" placeholder="Entrez votre adresse mail">
+                        <button type="submit" class="btn btn-big icon-btn"><i class="material-icons">mail_outline</i></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--================ End of instagram ================-->
+          </div>
+        </div>
+        <div class="content-element-18">
+          <div class="row vr-size-2 align-items-center">
+            <div class="col-xl-5">
+              <div class="content-element-10">
+                <div class="mad-offset-left">
+                  <div class="mad-section-side-title rotate">Informations de Contact</div>
+                  <ul class="mad-our-info">
+                    <li><i class="material-icons">phone</i><span>03 80 24 02 87</span></li>
+                    <li class="content-element-5"><i class="material-icons">mail_outline</i><span>sushi.kai@orange.fr</span></li>
+                    <li><i class="material-icons">location_on</i>
+                      <span>Beaune 21200, <br>
+                      50 Rue Faubourg St Nicolas <br>
+                      <a href="https://www.google.fr/maps/place/SUSHI+KAI/@47.029648,4.8388248,17z/data=!3m1!4b1!4m5!3m4!1s0x47f2f34c05a818ed:0x65fb1fdc6e64b9ca!8m2!3d47.0296444!4d4.8410135" class="mad-dir mad-link">Voir sur Google Map</a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+               <div class="content-element-10">
+                <div class="mad-offset-left">
+                  <div class="mad-section-side-title rotate">Heures d'ouvertures</div>
+                  <ul class="mad-our-info">
+                    <li><i class="material-icons">access_time</i>
+                      <span>
+                    <b>du mardi au samedi :</b><br>12h - 14h ; 19h - 22h <br>Dimanche ouvert pour évenements spéciaux, réservation obligatoire.
+
+                     </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-element-10">
+                <div class="mad-offset-left">
+                  <div class="mad-section-side-title rotate">Suivez nous</div>
+                  <div class="mad-social-icons style-2 size-big">
+                    <ul>
+                    <li>
+  <a href="https://fr-fr.facebook.com/sushikaibeaune/" aria-label="Facebook Sushi Kai Beaune">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</li>
+<li>
+  <a href="https://www.instagram.com/sushikai_beaune/" aria-label="Instagram Sushi Kai Beaune">
+    <i class="fab fa-instagram"></i>
+  </a>
+</li>
+<li>
+  <a href="https://www.tripadvisor.fr/Restaurant_Review-g187109-d4105356-Reviews-Sushikai-Beaune_Cote_d_Or_Bourgogne_Franche_Comte.html" aria-label="Tripadvisor Sushi Kai Beaune">
+    <i class="fab fa-tripadvisor"></i>
+  </a>
+</li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <article class="mad-cta size-4 mad-section mad-colorizer--scheme-color-4 mad-colorizer--scheme-light btns-white">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h2 class="mad-cta-title">Prêt à réserver une table?</h2>
+            </div>
+            <div class="col-lg-5">
+              <div class="btn-set">
+                <a href="reservation_open_table.html" class="btn btn-huge"><span>Réserver Maintenant</span></a>
+                <a href="pages_contact_v1.html" class="btn btn-huge"><span>Nous Contacter</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+     <!--================ Footer ================-->
+      <footer id="mad-footer" class="mad-footer">
+        <!--================ Footer row ================-->
+        <div class="mad-footer-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <!--================ Widget ================-->
+             <br><br><br>   <section class="mad-widget">
+                  <div class="content-element-2">
+                    <a href="#" class="logo"><img src="images/logo1.png" alt="logo sushikai"></a>
+                  </div>
+                  <br><p>L'équipe du Sushikai fait tout son possible pour récupérer après la crise Covid. Nous essayons de vous offrir le meilleur malgré ce que nous avons subi récemment.</p>
+                </section>
+                <!--================ End of Widget ================-->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <!--================ Widget ================-->
+                <section class="mad-widget">
+                  <h5 class="mad-widget-title">Suivez nous sur Facebook</h5>
+                  <div data-tabs="" data-href="https://www.facebook.com/sushikaibeaune" data-small-header="true" data-adapt-container-width="true"
+                    data-width="500" data-hide-cover="false" data-show-facepile="true" class="fb-page">
+                    <blockquote cite="https://www.facebook.com/sushikaibeaune" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/sushikaibeaune">Notre Facebook</a></blockquote>
+                  </div>
+                  <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+                </section>
+                <!--================ End of Widget ================-->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <!--================ Widget ================-->
+                <section class="mad-widget">
+                  <h5 class="mad-widget-title">Voir nos Avis</h5>
+                  <div class="mad-entities mad-entities-small">
+                    <div class="mad-col">
+                      <!--================ Entity ================-->
+                      <article class="mad-entity">
+                        <div class="mad-entity-body">
+                          <time datetime="2020-08-12">Tripadvisor</time>
+                          <h6 class="mad-entity-title"><a href="https://www.tripadvisor.fr/Restaurant_Review-g187109-d4105356-Reviews-Sushikai-Beaune_Cote_d_Or_Bourgogne_Franche_Comte.html" class="mad-link">Page Tripadvisor</a></h6>
+                        </div>
+                      </article>
+                      <!--================ End of Entity ================-->
+                    </div>
+                    <div class="mad-col">
+                      <!--================ Entity ================-->
+                      <article class="mad-entity">
+                        <div class="mad-entity-body">
+                          <time datetime="2020-08-08">Google</time>
+                          <h6 class="mad-entity-title"><a href="https://www.google.com/search?q=SUSHIKAI+BEAUNE&sxsrf=ALiCzsY4zsFPKM_fjPa-PZlGfivTHcZgHw%3A1655882973486&source=hp&ei=3cSyYsXnGof4lwTM7LDABA&iflsig=AJiK0e8AAAAAYrLS7WBgDCshBRso2J_rGIqU1uJ_jAHp&ved=0ahUKEwiFyq_jxMD4AhUH_IUKHUw2DEgQ4dUDCAc&uact=5&oq=SUSHIKAI+BEAUNE&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgjECcyCwguEIAEEMcBEK8BMgYIABAeEBYyAggmOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQowI6CAgAELEDEIMBOgQIABADOggIABCABBCxAzoOCC4QgAQQsQMQxwEQowI6BQgAEIAEOggILhCABBCxAzoICAAQgAQQiwM6FAguEIAEEMcBEK8BEIsDEKYDEKgDOhQILhCABBDHARCvARCLAxCoAxCmAzoNCC4QgAQQxwEQrwEQCjoHCAAQsQMQCjoECAAQCjoFCAAQywE6BwgAEAoQywE6CwguEMcBEK8BEMsBUABYvQ5gmw9oAHAAeACAAbcBiAG3C5IBAzkuNpgBAKABAbgBAg&sclient=gws-wiz#" class="mad-link">Page Google</a></h6>
+                        </div>
+                      </article>
+                      <!--================ End of Entity ================-->
+                    </div>
+                    <div class="mad-col">
+                      <!--================ Entity ================-->
+                      <article class="mad-entity">
+                        <div class="mad-entity-body">
+                          <time datetime="2020-08-01">The Fork</time>
+                          <h6 class="mad-entity-title"><a href="https://www.thefork.fr/restaurant/sushi-kai-r35035" class="mad-link">Page the Fork</a></h6>
+                        </div>
+                      </article>
+                      <!--================ End of Entity ================-->
+                    </div>
+                  </div>
+                </section>
+                <!--================ End of Widget ================-->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <!--================ Widget ================-->
+                <section class="mad-widget">
+                  <h5 class="mad-widget-title">Souscrire à la Newsletter</h5>
+                  <div class="content-element-4">
+   
+<form class="mad-newsletter-form" action="https://formspree.io/f/mlezaabo"
+  method="POST">
+                      <input type="email" name="email" placeholder="Votre adresse mail">
+                      <button type="submit" class="btn btn-big w-100">Souscrire</button>
+                    </form>
+                  </div>
+                  <div class="mad-social-icons">
+                      <ul>
+                    <li>
+  <a href="https://fr-fr.facebook.com/sushikaibeaune/" aria-label="Facebook Sushi Kai Beaune">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</li>
+<li>
+  <a href="https://www.instagram.com/sushikai_beaune/" aria-label="Instagram Sushi Kai Beaune">
+    <i class="fab fa-instagram"></i>
+  </a>
+</li>
+<li>
+  <a href="https://www.tripadvisor.fr/Restaurant_Review-g187109-d4105356-Reviews-Sushikai-Beaune_Cote_d_Or_Bourgogne_Franche_Comte.html" aria-label="Tripadvisor Sushi Kai Beaune">
+    <i class="fab fa-tripadvisor"></i>
+  </a>
+</li>
+
+                    </ul>
+                  </div>
+                </section>
+                <!--================ End of Widget ================-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--================ End of Footer row ================-->
+        <div class="mad-hr-list">
+          <ul class="justify-content-center">
+            <li><a href="index.html" class="mad-link">Accueil	</a></li>
+            <li><a href="menu_v4.html" class="mad-link">Carte sur place</a></li>
+            <li><a href="menu_v1.html" class="mad-link">Carte à emporter</a></li>
+            <li><a href="menu_v2.html" class="mad-link">Menu fêtes</a></li>
+            <li><a href="pages_team.html" class="mad-link">Page du Chef</a></li>
+
+            <li><a href="reservation_open_table.html" class="mad-link">Réservations</a></li>
+          </ul>
+        </div>
+     <p class="copyrights"><a href="https://a-bweb.fr/" class="mad-link link-white">Par Abweb, création de site internet à Beaune</a>.
+         </p>
+      </footer>
+      <!--================ End of Footer ================-->
+  </div>
+<!-- Scripts JS optimisés -->
+
+<!-- Modernizr doit rester en tête si utilisé pour le HTML/CSS -->
+<script src="vendors/modernizr.js"></script>
+
+<!-- jQuery et plugins dépendants -->
+<script src="vendors/jquery-3.3.1.min.js"></script>
+<script src="vendors/jquery.easing.1.3.min.js"></script>
+<script src="vendors/monkeysan.jquery.nav.1.0.min.js"></script>
+<script src="vendors/monkeysan.tabs.min.js"></script>
+<script src="vendors/handlebars-v4.0.5.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendors/jquery.parallax-1.1.3.min.js"></script>
+<script src="vendors/monkeysan.validator.min.js"></script>
+<script src="vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+<script src="vendors/retina.min.js"></script>
+<script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Tiers : Google Maps chargé après le rendu -->
+<script>
+window.addEventListener('load', function() {
+  const script = document.createElement('script');
+  script.src = 'https://maps.google.com/maps/api/js?key=AIzaSyC69fDkZDLBQbIIJk24zbXGS78yEpJj_r0&libraries=geometry&v=3.20';
+  document.body.appendChild(script);
+});
+</script>
+
+<!-- Modules et scripts du site -->
+<script src="js/modules/mad.newsletter-form.min.js"></script>
+<script src="js/modules/mad.sticky-header-section.min.js"></script>
+<script src="js/mad.app.js"></script>
+
+<!-- Extensions Revolution Slider -->
+<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+</body>
+</html>
+
