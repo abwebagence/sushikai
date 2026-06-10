@@ -5,6 +5,13 @@ on:
     branches:
       - main
 
+# Un seul déploiement à la fois : les push successifs sont mis en file
+# d'attente et s'exécutent l'un après l'autre, jamais en parallèle.
+# Cela évite que plusieurs uploads SFTP simultanés se corrompent entre eux.
+concurrency:
+  group: deploy-ionos
+  cancel-in-progress: false
+
 jobs:
   deploy:
     name: Upload website to IONOS
