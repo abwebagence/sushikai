@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Pages de démonstration du template (non utilisées) — éviter l'indexation
+Disallow: /logs/
+Disallow: /elements_
+Disallow: /blog_
+Disallow: /shop_
+Disallow: /events_
+Disallow: /gallery_
+Disallow: /index1.html
+Disallow: /home_2.html
+Disallow: /home_3.html
+Disallow: /home_4.html
+Disallow: /menu_v6.html
+Disallow: /pages_404.html
+Disallow: /pages_about.html
+Disallow: /pages_coming_soon.html
+Disallow: /pages_contact_v2.html
+Disallow: /reservation_booked.html
+
+Sitemap: https://www.sushi-kai.com/sitemap.xml

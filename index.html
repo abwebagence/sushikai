@@ -80,18 +80,40 @@
   "image": "https://www.sushi-kai.com/images/logo1.png",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "50 Rue du Faubourg Saint-Nicolas, 21200 Beaune",
+    "streetAddress": "50 Rue du Faubourg Saint-Nicolas",
     "addressLocality": "Beaune",
     "postalCode": "21200",
     "addressCountry": "FR"
   },
-  "telephone": "+33 3 80 24 02 87",
-  "url": "https://www.sushi-kai.com",
-  "servesCuisine": "Japonais, Sushi",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.0295524,
+    "longitude": 4.841257
+  },
+  "telephone": "+33380240287",
+  "url": "https://www.sushi-kai.com/",
+  "menu": "https://www.sushi-kai.com/menu_v4.html",
+  "acceptsReservations": true,
+  "servesCuisine": ["Japonaise", "Sushi"],
   "priceRange": "€€",
-  "openingHours": [
-    "Mo-Su 12:00-14:00",
-    "Mo-Su 19:00-22:00"
+  "sameAs": [
+    "https://www.facebook.com/sushikaibeaune",
+    "https://www.instagram.com/sushikai_beaune/",
+    "https://www.tripadvisor.fr/Restaurant_Review-g187109-d4105356-Reviews-Sushikai-Beaune_Cote_d_Or_Bourgogne_Franche_Comte.html"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "12:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "19:00",
+      "closes": "22:00"
+    }
   ]
 }
 </script>
@@ -108,8 +130,16 @@
   
   <link rel="alternate" media="only screen and (max-width: 768px)" href="https://www.sushi-kai.com/mobile/">
 
-  
+  <link rel="canonical" href="https://www.sushi-kai.com/">
+
+  <meta property="og:site_name" content="Sushikai Beaune">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sushikai Beaune - Restaurant japonais et sushis">
+  <meta name="twitter:description" content="Sushikai à Beaune : sushis, plats japonais sur place ou à emporter. Terrasse et cuisine d'exception.">
+  <meta name="twitter:image" content="https://www.sushi-kai.com/images/logo1.png">
 </head>
+
+<body>
 
 
 
@@ -333,7 +363,7 @@
 
 
 
-<body> <main class="content">
+<main class="content">
   <div class="mad-preloader"></div>
   <div id="mad-page-wrapper" class="mad-page-wrapper wide-style">
     <!--================ Search Modal ================-->
@@ -454,7 +484,7 @@
               data-width="['640', '340', '240', '240']" data-textAlign="['right']" class="tp-caption tp-resizeme">
               <div class="mad-wave-item">
                 <span class="mad-wave style-2 type-3"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
-                <img src="images/rev_img1.avif" alt="">
+                <img src="images/rev_img1.avif" alt="Assortiment de sushis du restaurant japonais Sushikai à Beaune">
               </div>
             </div>
             <!--================ End of Layer ================-->
@@ -499,7 +529,7 @@ COLOR:black;
               data-width="['640', '340', '240', '240']" data-textAlign="['right']" class="tp-caption">
               <div class="mad-wave-item">
                 <span class="mad-wave style-2 type-3"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
-                <img src="images/rev_img2.avif" alt="">
+                <img src="images/rev_img2.avif" alt="Plateau de sushis et makis faits maison chez Sushikai Beaune">
               </div>
             </div>
             <!--================ End of Layer ================-->
@@ -532,7 +562,7 @@ COLOR:black;
               data-width="['640', '340', '240', '240']" data-textAlign="['right']" class="tp-caption">
               <div class="mad-wave-item">
                 <span class="mad-wave style-2 type-3"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
-                <img src="images/rev_img3.avif" alt="">
+                <img src="images/rev_img3.avif" alt="Sushis et produits frais préparés au restaurant Sushikai à Beaune">
               </div>
             </div>
             <!--================ End of Layer ================-->
@@ -569,7 +599,7 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
               </div>
             </div>
             <div class="col-xl-5">
-              <figure><img src="images/723x464_img1.avif" alt=""></figure>
+              <figure><img src="images/723x464_img1.avif" alt="Salle du restaurant japonais Sushikai à Beaune au décor asiatique"></figure>
             </div>
           </div>
           <div class="row col-xxl">
@@ -656,7 +686,7 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
 
   <div class="slider-track">
     <div class="slide">
-      <img src="img/1000027250.avif" alt="">
+      <img src="img/1000027250.avif" alt="" loading="lazy" decoding="async">
      <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -665,60 +695,60 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
  
 
     <div class="slide">
-      <img src="img/1000027337.avif" alt="">
+      <img src="img/1000027337.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
     <div class="slide">
-      <img src="img/1000029156.avif" alt="">
+      <img src="img/1000029156.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
     <div class="slide">
-      <img src="img/1000028821.avif" alt="">
+      <img src="img/1000028821.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/1000027338.avif" alt="">
+      <img src="img/1000027338.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000027426.avif" alt="">
+      <img src="img/1000027426.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
 	 <div class="slide">
-      <img src="img/1000027904.avif" alt="">
+      <img src="img/1000027904.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000027941.avif" alt="">
+      <img src="img/1000027941.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000028613.avif" alt="">
+      <img src="img/1000028613.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
 	 <div class="slide">
-      <img src="img/1000028797.avif" alt="">
+      <img src="img/1000028797.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -726,19 +756,19 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
 	
 	
 	 <div class="slide">
-      <img src="img/1000029557.avif" alt="">
+      <img src="img/1000029557.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000029566.avif" alt="">
+      <img src="img/1000029566.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000029568.avif" alt="">
+      <img src="img/1000029568.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -746,31 +776,31 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
 
 	
 	 <div class="slide">
-      <img src="img/1000029574.avif" alt="">
+      <img src="img/1000029574.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000029581.avif" alt="">
+      <img src="img/1000029581.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000029586.avif" alt="">
+      <img src="img/1000029586.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000032748.avif" alt="">
+      <img src="img/1000032748.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	 <div class="slide">
-      <img src="img/1000032752.avif" alt="">
+      <img src="img/1000032752.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -779,49 +809,49 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
 	
 	
 	 <div class="slide">
-      <img src="img/1000032757.avif" alt="">
-      <div class="slide-overlay">
-  <img src="find.png" class="overlay-icon">
-</div>
-    </div>
-	
-	 <div class="slide">
-      <img src="img/1000032772.avif" alt="">
+      <img src="img/1000032757.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/1000032849.avif" alt="">
+      <img src="img/1000032772.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/1000032850.avif" alt="">
+      <img src="img/1000032849.avif" alt="" loading="lazy" decoding="async">
+      <div class="slide-overlay">
+  <img src="find.png" class="overlay-icon">
+</div>
+    </div>
+	
+	 <div class="slide">
+      <img src="img/1000032850.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/1000032852.avif" alt="">
+      <img src="img/1000032852.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/1000032855.avif" alt="">
+      <img src="img/1000032855.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/1000032859.avif" alt="">
+      <img src="img/1000032859.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -830,7 +860,7 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
 	
 	
 	 <div class="slide">
-      <img src="img/1000036085.avif" alt="">
+      <img src="img/1000036085.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -863,7 +893,7 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
 
   <div class="slider-track">
     <div class="slide">
-      <img src="img/11.avif" alt="">
+      <img src="img/11.avif" alt="" loading="lazy" decoding="async">
      <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -872,28 +902,28 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
  
 
     <div class="slide">
-      <img src="img/22.avif" alt="">
+      <img src="img/22.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
     <div class="slide">
-      <img src="img/33.avif" alt="">
+      <img src="img/33.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
     <div class="slide">
-      <img src="img/44.avif" alt="">
+      <img src="img/44.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/55.avif" alt="">
+      <img src="img/55.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -930,7 +960,7 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
 
   <div class="slider-track">
     <div class="slide">
-      <img src="img/66.avif" alt="">
+      <img src="img/66.avif" alt="" loading="lazy" decoding="async">
      <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -939,28 +969,28 @@ Chez Sushi Kaï, nous privilégions des produits frais, avec une sélection de p
  
 
     <div class="slide">
-      <img src="img/77.avif" alt="">
+      <img src="img/77.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
     <div class="slide">
-      <img src="img/88.avif" alt="">
+      <img src="img/88.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 
     <div class="slide">
-      <img src="img/99.avif" alt="">
+      <img src="img/99.avif" alt="" loading="lazy" decoding="async">
        <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
     </div>
 	
 	 <div class="slide">
-      <img src="img/1010.avif" alt="">
+      <img src="img/1010.avif" alt="" loading="lazy" decoding="async">
       <div class="slide-overlay">
   <img src="find.png" class="overlay-icon">
 </div>
@@ -1128,7 +1158,7 @@ lightbox.addEventListener('click', () => {
                 <div class="mad-col">
                   <!--================ Team Member ================-->
                   <figure class="mad-team-member">
-                    <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/704x648_photo1.jpg" alt=""></a>
+                    <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/704x648_photo1.jpg" alt="Mr Wang, chef de Sushikai à Beaune et champion de France de sushi"></a>
                     <figcaption class="mad-team-member-info">
                       <div class="mad-info-wrap">
                         <div class="mad-info-header">
@@ -1167,7 +1197,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo5.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo5.png" alt="" loading="lazy" decoding="async"></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
@@ -1190,7 +1220,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo6.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo6.png" alt="" loading="lazy" decoding="async"></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
@@ -1213,7 +1243,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo3.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo3.png" alt="" loading="lazy" decoding="async"></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
@@ -1236,7 +1266,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo4.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo4.png" alt="" loading="lazy" decoding="async"></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
@@ -1294,7 +1324,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
                   <article class="mad-entity">
                     <div class="mad-entity-media mad-wave-item">
                       <span class="mad-wave"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
-                      <img src="images/704x568_img1.avif" alt="terasse sushikai">
+                      <img src="images/704x568_img1.avif" alt="terasse sushikai" loading="lazy" decoding="async">
                     </div>
                     <div class="mad-entity-content">
                     <p class="lol32" style="color: black; font-size: 30px; font-weight: bold;">Un cadre d'exception</p> 
@@ -1312,7 +1342,7 @@ Vous pouvez dîner en <b>salle ou en terrasse</b> selon vos envies. Notre person
                   <article class="mad-entity">
                     <div class="mad-entity-media mad-wave-item">
                       <span class="mad-wave style-2 type-2"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
-                     <img src="images/704x568_img2.avif" alt="plateau sushis">
+                     <img src="images/704x568_img2.avif" alt="plateau sushis" loading="lazy" decoding="async">
                     </div>
                     <div class="mad-entity-content">
                        <p class="lol32" style="color: black; font-size: 30px; font-weight: bold;">Nos spécialités</p> 
@@ -1371,10 +1401,10 @@ Vous pouvez les consommer sur place ou les emporter. Nous vous proposons, par ai
               <!--================ End of Icon Box ================-->
             </div>
             <div class="mad-col mad-col-x2">
-              <figure><img src="images/723x432_img1.avif" alt=""></figure>
+              <figure><img src="images/723x432_img1.avif" alt="" loading="lazy" decoding="async"></figure>
             </div>
             <div class="mad-col">
-              <figure class="left-offset"><img src="images/405x336_img1.avif" alt=""></figure>
+              <figure class="left-offset"><img src="images/405x336_img1.avif" alt="" loading="lazy" decoding="async"></figure>
             </div>
             <div class="mad-col">
               <!--================ Icon Box ================-->
@@ -1848,7 +1878,7 @@ Je recommande vivement.”</p>
               <!--================ Google Map ================-->
               <div class="mad-wave-item with-map">
                 <span class="mad-wave style-2 bottom-side"><img src="sushi_svg_icons/waves.svg" alt="" class="svg"></span>
-                <img src="eer.jpg" alt="map sushikai">
+                <img src="eer.jpg" alt="map sushikai" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -1931,7 +1961,4 @@ Je recommande vivement.”</p>
 </script>
 
 </body>
-</html>
-</body>
-
 </html>
