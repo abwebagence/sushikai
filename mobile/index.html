@@ -80,8 +80,8 @@
   <div class="modal-content">
     <button class="modal-close" id="closeModal">&times;</button>
 
-    <video id="modalVideo" autoplay muted playsinline>
-      <source src="ef8ef7e8fzeff.mp4" type="video/mp4">
+    <video id="modalVideo" muted playsinline preload="none">
+      <source data-src="ef8ef7e8fzeff.mp4" type="video/mp4">
       Ton navigateur ne supporte pas la vidéo.
     </video>
   </div>
@@ -166,6 +166,13 @@
     const closeBtn = document.getElementById("closeModal");
     const video = document.getElementById("modalVideo");
 
+    // La vidéo ne se télécharge qu'une fois la page entièrement chargée,
+    // pour ne pas concurrencer le contenu principal
+    const source = video.querySelector("source");
+    source.src = source.dataset.src;
+    video.load();
+    video.play().catch(function () {});
+
     // Fermer en cliquant sur la croix
     closeBtn.addEventListener("click", function () {
       modal.style.display = "none";
@@ -192,6 +199,7 @@
 
 <body>
 <!-- GTranslate widget -->
+<link rel="preconnect" href="https://cdn.gtranslate.net">
 <div class="gtranslate_wrapper"></div>
 <script>window.gtranslateSettings = {"default_language":"fr","native_language_names":true,"detect_browser_language":true,"languages":["fr","en","it","es","zh-TW","ja"],"wrapper_selector":".gtranslate_wrapper","flag_style":"3d"}</script>
 <style>#gt_float_wrapper{bottom:20px !important;right:20px !important;left:auto !important;z-index:999999 !important;}</style>
@@ -651,7 +659,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo5.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo5.avif" alt=""></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
@@ -674,7 +682,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo6.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo6.avif" alt=""></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
@@ -697,7 +705,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo3.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo3.avif" alt=""></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
@@ -720,7 +728,7 @@ Mr WANG sera très heureux de vous accueillir chez SUSHI KAI à Beaune, afin de 
               <div class="mad-col">
                 <!--================ Team Member ================-->
                 <figure class="mad-team-member">
-                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo4.png" alt=""></a>
+                  <a href="javascript:void(0)" class="mad-team-member-photo"><img src="images/328x328_photo4.avif" alt=""></a>
                   <figcaption class="mad-team-member-info">
                     <div class="mad-info-wrap">
                       <div class="mad-info-header">
